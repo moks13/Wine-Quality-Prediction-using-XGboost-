@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction for Wine Quality</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			    <div class="right">
+				    <h2>Prediction for Wine Quality</h2>
+
+				        <div class="form">
+                            <form action="/predict" method="POST">
+                                 <input type="number" class="field" name="fixed_acidity" id="fixed_acidity" placeholder="Fixed Acidity" step="0.001">
+                                 <input type="number" class="field" name="volatile_acidity" id="volatile_acidity" placeholder="Volatile Acidity" step="0.001">
+                                 <input type="number" class="field" name="citric_acid" id="citric_acid" placeholder="Citric Acid" step="0.001">
+								 <input type="number" class="field" name="residual_sugar" id="residual_sugar" placeholder="Residual Sugar" step="0.001">
+                                 <input type="number" class="field" name="chlorides" id="chlorides" placeholder="Chlorides" step="0.001">
+                                 <input type="number" class="field" name="total_sulfur_dioxide" id="total_sulfur_dioxide" placeholder="Total Sulfur Dioxide" step="0.001">
+                                 <input type="number" class="field" name="density" id="density"placeholder="Density" step="0.001">
+								 <input type="number" class="field" name="pH" id="pH"placeholder="pH" step="0.001">
+								 <input type="number" class="field" name="sulphates" id="sulphates"placeholder="Sulphates" step="0.001">
+								 <input type="number" class="field" name="alcohol" id="alcohol"placeholder="Alcohol" step="0.001">
+                                 <input type="submit" class="btn" value="Predict">
+							</form>
+                        </div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
